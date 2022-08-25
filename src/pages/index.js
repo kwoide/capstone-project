@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import IntroForm from '../components/form-intro';
+import IntroForm from '../components/IntroForm.js';
 import Layout from '../components/Layout';
 
 export default function HomePage() {
