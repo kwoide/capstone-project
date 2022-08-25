@@ -9,7 +9,7 @@ export default function IntroForm() {
 		formState: {errors},
 	} = useForm();
 
-	const [people, setPeople] = useState([
+	const [restaurant, setRestaurant] = useState([
 		{
 			restaurantName: 'Restaurant Name',
 			typeOfFood: 'Type of Food',
@@ -21,7 +21,7 @@ export default function IntroForm() {
 	function onSubmit(data) {
 		console.log(data);
 
-		setPeople([...people, {...data, id: nanoid()}]);
+		setRestaurant([...restaurant, {...data, id: nanoid()}]);
 	}
 
 	return (
@@ -68,7 +68,7 @@ export default function IntroForm() {
 				<input type="submit" />
 			</form>
 			<ul>
-				{people.map(person => {
+				{restaurant.map(person => {
 					return (
 						<li key={person.id}>
 							{person.restaurantName} {person.typeOfFood} {person.priceLevel}
