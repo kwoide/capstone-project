@@ -1,5 +1,4 @@
 import Footer from './Footer';
-import IntroForm from './form-intro';
 import Header from './Header';
 
 export default function Layout({children}) {
@@ -7,7 +6,7 @@ export default function Layout({children}) {
 		<>
 			<Header />
 			<main>{children}</main>
-			<IntroForm />
+
 			<Footer />
 		</>
 	);

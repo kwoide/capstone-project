@@ -2,8 +2,6 @@ import {nanoid} from 'nanoid';
 import {useState} from 'react';
 import {useForm} from 'react-hook-form';
 
-console.clear();
-
 export default function IntroForm() {
 	const {
 		register,
@@ -58,7 +56,7 @@ export default function IntroForm() {
 					<option value="American Cuisine">American Cuisine</option>
 				</select>
 
-				{errors.typeOfFood && <p>Name of restaurant is required</p>}
+				{errors.typeOfFood && <p>Type of food is required</p>}
 
 				<select id="priceLevel" {...register('priceLevel', {required: true})}>
 					<option value="€">€</option>

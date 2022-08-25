@@ -1,5 +1,6 @@
 import Head from 'next/head';
 
+import IntroForm from '../components/form-intro';
 import Layout from '../components/Layout';
 
 export default function HomePage() {
@@ -11,6 +12,8 @@ export default function HomePage() {
 			</Head>
 
 			<h1>Hello</h1>
+
+			<IntroForm />
 		</Layout>
 	);
 }
