@@ -11,7 +11,7 @@ export default function HomePage() {
 				<meta key="description" name="description" content="This is my project" />
 			</Head>
 
-			<h1>Hello</h1>
+			<h1>HAPPYMENU</h1>
 
 			<IntroForm />
 		</Layout>
