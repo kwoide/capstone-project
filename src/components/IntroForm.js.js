@@ -27,9 +27,9 @@ export default function IntroForm() {
 	return (
 		<>
 			<form onSubmit={handleSubmit(onSubmit)}>
+				<label htmlFor="restaurantname">Name of the restaurant</label>
 				<input
 					type="text"
-					placeholder="Name of Restaurant"
 					id="restaurantName"
 					{...register('restaurantName', {
 						required: true,
@@ -37,6 +37,8 @@ export default function IntroForm() {
 				/>
 
 				{errors.restaurantName && <p>Name of restaurant is required</p>}
+
+				<label htmlFor="typeoffood">Type of food</label>
 
 				<select id="typeOfFood" {...register('typeOfFood', {required: true})}>
 					<option value="French Cuisine">French Cuisine</option>
@@ -58,6 +60,8 @@ export default function IntroForm() {
 
 				{errors.typeOfFood && <p>Type of food is required</p>}
 
+				<label htmlFor="pricelevel">Price level</label>
+
 				<select id="priceLevel" {...register('priceLevel', {required: true})}>
 					<option value="€">€</option>
 					<option value="€€">€€</option>
@@ -65,7 +69,7 @@ export default function IntroForm() {
 					<option value="€€€€">€€€€</option>
 				</select>
 
-				<input type="submit" />
+				<button type="submit">Submit</button>
 			</form>
 			<ul>
 				{restaurant.map(person => {
