@@ -19,8 +19,6 @@ export default function IntroForm() {
 	]);
 
 	function onSubmit(data) {
-		//console.log(data);
-
 		setRestaurant([...restaurant, {...data, id: nanoid()}]);
 	}
 
