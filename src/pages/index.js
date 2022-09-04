@@ -1,6 +1,5 @@
 import Head from 'next/head';
 
-import IntroForm from '../components/IntroForm.js';
 import Layout from '../components/Layout';
 
 export default function HomePage() {
@@ -12,8 +11,6 @@ export default function HomePage() {
 			</Head>
 
 			<h1>HAPPYMENU</h1>
-
-			<IntroForm />
 		</Layout>
 	);
 }
